@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 200px;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}

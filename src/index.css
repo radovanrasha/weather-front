@@ -1,0 +1,235 @@
+/* Light theme (default) */
+:root {
+  --bg-color: rgba(243, 242, 239, 0.5);
+  --bg-cont-color: rgba(243, 242, 239, 0.5);
+  --text-color: #21252b;
+  --temp-bg-color: #c7fcff;
+  --temp-color: #3f454e;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: rgba(33, 37, 43, 1);
+  --bg-cont-color: rgba(33, 37, 43, 0.5);
+  --text-color: #ffffff;
+  --text-color-second: #21252b;
+  --temp-bg-color: #3f454e;
+  --temp-color: #c7fcff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.site-title {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  justify-content: center;
+  text-align: center;
+}
+
+.app-logo {
+  height: 80px;
+}
+
+.nav li.active {
+  background-color: #555;
+}
+
+.nav li:hover {
+  background-color: #777;
+}
+
+.container {
+  /* margin: 1rem; */
+  text-align: center;
+}
+
+.nav {
+  flex-direction: column;
+}
+
+.nav ul {
+  flex-direction: column;
+}
+
+.hamburger {
+  display: none; /* Initially hidden, will display in mobile */
+}
+
+/* Hamburger Menu Icon */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: var(--text-color);
+}
+
+@media (max-width: 900px) {
+  /* 768px is typically the breakpoint for tablets. Adjust as needed. */
+  .nav ul {
+    display: none; /* Hide by default in mobile view */
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav a {
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .nav li:hover,
+  .nav li.active {
+    background-color: #777;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .nav ul {
+    flex-direction: row;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-color);
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.toggleThemeButton {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: var(--bg-color);
+  color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleThemeIcon {
+  height: 40px;
+  padding: 5px 20px 5px 20px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+}
+
+.footer {
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-cont-color);
+  border-top: 1px solid var(--bg-color);
+  height: 6%;
+  color: var(--text-color);
+}
+
+.footerIcon {
+  height: 30px;
+  padding: 0px;
+  margin: 0 10px 0 0;
+}
+
+.footer div {
+  margin: 0;
+  padding: 0;
+}
+
+.footer p {
+  margin: 20px 0 0 0;
+  padding: 0;
+}

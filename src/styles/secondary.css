@@ -1,0 +1,70 @@
+@keyframes slideInFromDown {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.onecard-profile-wrapper {
+  width: 80%;
+  height: 700px;
+  position: relative;
+  margin: 15px 0 15px 0;
+  animation-name: slideInFromRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@media (min-width: 600px) {
+  .onecard-profile-wrapper {
+    width: 60%;
+    margin: 15px 40px 15px 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .onecard-profile-wrapper {
+    width: 50%;
+    margin: 15px 40px 15px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .onecard-profile-wrapper {
+    width: 40%;
+    margin: 15px 40px 15px 40px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .onecard-profile-wrapper {
+    width: 29%;
+    margin: 15px 40px 15px 40px;
+  }
+}
