@@ -2,8 +2,7 @@ module.exports = {
   apps: [
     {
       name: "weather",
-      script: "npm",
-      args: "run start:prod", // Run npm start:prod through PM2
+      script: "npm run start:prod",
       port: 3001,
       time: true,
     },
@@ -19,7 +18,8 @@ module.exports = {
       env: {
         NODE_ENV: "production",
       },
-      "post-deploy": "pm2 startOrRestart ecosystem.config.js --env production",
+      "post-deploy":
+        "npm install && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };
