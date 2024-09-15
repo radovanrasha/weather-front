@@ -17,21 +17,23 @@ const About = () => {
         />
         <div class="text-content">
           <p className="leftslide" style={{ animationDelay: `${1 * 0.3}s` }}>
-            I am a full-stack JavaScript developer from Serbia born on May 20,
-            1999. I completed my secondary education in economics and commerce.
-            At the University of Economics in Subotica, I pursued a course in
-            Business Informatics, which centers on IT. My culminating thesis and
-            project was focused on Node.js.
+            I am a full-stack JavaScript developer with over two years of
+            professional experience, based in Serbia. My journey began with a
+            solid foundation in economics and commerce during my secondary
+            education, followed by a specialized course in Business Informatics
+            at the University of Economics in Subotica, where I focused my
+            thesis and project work on Node.js.
           </p>
         </div>
       </div>
       <div className="about-row">
         <div class="text-content">
           <p className="rightslide" style={{ animationDelay: `${2 * 0.3}s` }}>
-            My primary experience lies in backend development using Node.js,
-            Express, and MongoDB, as well as frontend development with React and
-            AntD. Additionally, I possess a basic knowledge of SQL, TypeScript,
-            MUI and similar technologies.
+            My expertise is primarily in backend development using Node.js,
+            Express, and MongoDB, along with frontend development skills as
+            React and Ant Design. I also have foundational knowledge of NestJS,
+            VPS Linux Servers, Pm2, Nginx, SQL, TypeScript and related
+            technologies.
           </p>
         </div>
         <img
@@ -50,18 +52,18 @@ const About = () => {
         />
         <div class="text-content">
           <p className="leftslide" style={{ animationDelay: `${3 * 0.3}s` }}>
-            I bring over a year of professional experience in web development,
-            complemented by a university degree. In addition, I have enhanced my
-            skills through various courses, participated in a coding
-            competition, and being involved in build of many personal projects.
+            Throughout my career, I have continually enhanced my skills through
+            various courses, participated in coding competitions, and
+            contributed to numerous personal projects.
           </p>
         </div>
       </div>
       <div className="about-row">
         <div class="text-content">
           <p className="rightslide" style={{ animationDelay: `${4 * 0.3}s` }}>
-            I am eager to further expand my expertise in these and similar areas
-            through continuous learning.
+            I am passionate about expanding my knowledge and expertise in these
+            and similar areas through continuous learning and hands-on
+            experience.
           </p>
         </div>
         <img

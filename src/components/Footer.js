@@ -1,5 +1,6 @@
 import gmail from "../assets/gmail.png";
 import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
 
 const Footer = () => {
   return (
@@ -11,6 +12,10 @@ const Footer = () => {
         </a>
         <a href="https://www.linkedin.com/in/radovanrasha/">
           <img className="footerIcon" src={linkedin} alt="Profile" />
+        </a>
+
+        <a href="https://www.github.com/radovanrasha/" target="_blank">
+          <img className="footerIcon" src={github} alt="Profile" />
         </a>
       </div>
 
