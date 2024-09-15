@@ -19,7 +19,7 @@ module.exports = {
         NODE_ENV: "production",
       },
       "post-deploy":
-        "npm install && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
+        "rm -rf node_modules && . ~/.nvm/nvm.sh && nvm use 20 && npm install && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };
